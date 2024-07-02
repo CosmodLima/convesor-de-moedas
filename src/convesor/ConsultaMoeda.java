@@ -25,7 +25,7 @@ public class ConsultaMoeda {
 
 
             Moeda moeda = new Gson().fromJson(response.body(), Moeda.class);
-            if (moeda.taxaDeConversao().containsKey(cambioMoeda)) {
+            if (moeda.conversion_rates().containsKey(cambioMoeda)) {
                 return moeda;
             } else {
                 throw new RuntimeException("Moeda não encontrada");

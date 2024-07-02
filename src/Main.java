@@ -22,6 +22,7 @@ public class Main {
             10) Peso Colombiano =>> Dólar
             11) Exibir Histórico de Conversões
             0) Sair
+            
             Escolha uma opção válida:
       ****************************************************
             """;

@@ -14,7 +14,7 @@ public class Conversor {
         Moeda moeda = tipoConsulta.moedasEscolhida(base, cambio);
         try {
             valor = Double.parseDouble(quantidadeMoeda);
-            conversorMoeda = valor * moeda.taxaDeConversao().get(cambio);
+            conversorMoeda = valor * moeda.conversion_rates().get(cambio);
             String resultadoConversao = "O valor " + valor + " " + base + " corresponde ao valor final de =>> " + conversorMoeda + " " + cambio;
             System.out.println(conversorMoeda);
             System.out.println(resultadoConversao);
